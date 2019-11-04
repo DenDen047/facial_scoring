@@ -1,0 +1,14 @@
+version: '0.1'
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: facial_scoring:latest
+    volumes:
+      - type: bind
+        source: ../src
+        target: /workdir
+    working_dir: /workdir
+    command: python main.py
