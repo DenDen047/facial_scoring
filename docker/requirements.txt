@@ -1,3 +1,5 @@
+cmake
+face_recognition
 numpy
 pillow
 opencv-python
